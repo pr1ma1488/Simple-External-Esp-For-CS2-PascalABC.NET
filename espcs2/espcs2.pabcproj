@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project FileVersion="2" Name="espcs2" MainFile="Main.pas" OutputFileName="espcs2.exe" OutputDirectory="" ProjectType="ConsoleApp" IncludeDebugInfo="True" GenerateXMLDoc="False" CommandLineArguments="" AppIcon="" DeleteEXE="True" DeletePDB="True" Product="" Company="" Trademark="" Copyright="" Title="" Description="" MajorVersion="0" MinorVersion="0" BuildVersion="0" RevisionVersion="0">
+  <Items>
+    <Item Type="SourceFile" Name="Main.pas" Path="Main.pas" />
+    <Item Type="SourceFile" Name="EntityClass.pas" Path="EntityClass.pas" />
+    <Item Type="SourceFile" Name="Overlay.pas" Path="Overlay.pas" />
+    <Item Type="SourceFile" Name="Offsets.pas" Path="Offsets.pas" />
+    <Item Type="SourceFile" Name="Math.pas" Path="Math.pas" />
+    <Item Type="SourceFile" Name="MemoryClass.pas" Path="MemoryClass.pas" />
+    <Item Type="SourceFile" Name="EntityLoopClass.pas" Path="EntityLoopClass.pas" />
+    <Item Type="Reference" AssemblyName="System" FullAssemblyName="System.dll" />
+  </Items>
+</Project>
