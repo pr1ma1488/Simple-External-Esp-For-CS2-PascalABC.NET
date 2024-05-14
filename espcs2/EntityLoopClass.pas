@@ -11,6 +11,8 @@ type EntityLoop = class
     
     var entities := new List&<Entity>();
     var localPlayer := new Entity;
+
+    var client := system.Diagnostics.Process.GetProcessesByName('cs2')[0].Modules[144].BaseAddress;
     
     var main_thread := new Thread(procedure -> begin while true do begin
     entities.Clear;
