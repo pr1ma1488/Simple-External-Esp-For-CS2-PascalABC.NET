@@ -9,9 +9,6 @@ type EntityLoop = class
     var Renderer := new MainRenderer;
     var screensize := Renderer.Screensize;
     
-    var _proc := system.Diagnostics.Process.GetProcessesByName('cs2')[0]; // get process
-    var client := _proc.Modules[144].BaseAddress; // get client.dll module
-    
     var entities := new List&<Entity>();
     var localPlayer := new Entity;
     
