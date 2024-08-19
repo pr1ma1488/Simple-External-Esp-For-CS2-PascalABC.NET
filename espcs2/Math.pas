@@ -19,22 +19,6 @@ type Calc = class
       result := new Vector2(-99,-99);
   end;
   
-  public static function CalculateAngles(from:vector3; &to:vector3):vector2;
-  begin
-    var yaw:single;
-    var pitch:single;
-    
-    var deltaX := &to.X - from.X;
-    var deltaY := &to.Y - from.Y;
-    yaw := single(System.Math.Atan2(deltaY, deltaX) * 180 / System.Math.PI);
-    
-    var deltaZ := &to.Z - from.Z;
-    var distance:double := System.Math.Sqrt(System.Math.Pow(deltaX, 2) + System.Math.Pow(deltaY, 2));
-    pitch := -(single)(System.Math.Atan2(deltaZ, distance) * 180 / System.Math.PI);
-    
-    result := new Vector2(yaw, pitch);
-  end;
-  
   public static function ReadMatrix(address:IntPtr):array of single;
   begin
     var bytes := Memory.ReadBytes(address, 4 * 16);
